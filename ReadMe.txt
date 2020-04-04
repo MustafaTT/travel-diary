@@ -44,4 +44,10 @@
 	* run "npm install" and "ng serve" commands inside travel-diary folder
 	* Make sure your django host url is same with "Frontend\travel-diary\src\app\common\global-constants.ts" apiUrl value
 
-			
+
+
+App Preview
+
+
+
+I[](main.jpg)
