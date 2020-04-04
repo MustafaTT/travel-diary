@@ -31,7 +31,7 @@
 
 	* and Spring boot application.properties inside src/main/resources
 
-- To start logging user viewed travels log to localstorage run java SpringBoot application.Log files location : "TravelDiary\TravelViewLogs"
+- To start logging user viewed travels log to localstorage run java SpringBoot application.Log files location : "TravelViewLogs"
 
 - Angular running on localhost:4200  if you change it make sure you add the url of angular inside djproject\djproject\settings.py CORS_ORIGIN_WHITELIST
 
