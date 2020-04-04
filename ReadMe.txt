@@ -2,7 +2,10 @@
 
 	  * Follow the instructions below to run project .
 
-- To start django API run "venv\Scripts\activate" command inside Backend folder then locate djproject and run "py.exe .\manage.py runserver" from command prompt.  
+- To start django API install virtual envioriment with "py -m venv venv" inside Backend folder,
+	run  "venv\Scripts\activate" command then locate djproject 
+	run "pip install -r requirements.txt"
+	and run "py.exe .\manage.py runserver" from command prompt.  
 
           * django runs on localhost:8000
 
