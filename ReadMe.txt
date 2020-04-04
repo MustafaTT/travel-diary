@@ -49,5 +49,4 @@
 App Preview
 
 
-
-<image src="main.jpg">
+![alt text](https://github.com/MustafaTT/travel-diary/blob/master/main.jpg)
