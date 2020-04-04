@@ -50,4 +50,4 @@ App Preview
 
 
 
-![](main.jpg)
+![](master/main.jpg)
