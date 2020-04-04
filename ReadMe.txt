@@ -50,4 +50,4 @@ App Preview
 
 
 
-![](master/main.jpg)
+<image src="main.jpg">
