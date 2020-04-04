@@ -1,0 +1,64 @@
+
+
+
+<div class="container-fluid" >
+
+          <div class="row">
+          <div *ngFor="let travel of travels" class="col-md-3">
+          
+            
+              <div class="card mb-4 box-shadow">
+              <ng-container >
+               <div *ngFor="let image of travel.image; index as i ;">
+               
+              <div  *ngIf="travel.image[i].is_main "class="card mb-4 box-shadow">
+                <img class="card-img-top" style="height: 300px; width: 100%;"  data-src="{{baseUrl}}{{travel.image[i].image}}" alt="Card image cap">
+                </div>
+                </div>
+                
+                </ng-container>
+                
+                <ng-container >
+               <div  *ngIf="!travel?.image?.length" class="card mb-4 box-shadow">
+                <img class="card-img-top" style="height: 300px; width: 100%;"  src="../../../../assets/placeholder.png" alt="Card image cap">
+                </div>
+                
+                </ng-container>
+                <div class="card-body">
+               
+                  <p class="card-text">
+                  Name:  {{travel.name}}</p>
+                  <p class="card-text">
+                  Description:  {{travel.description}}</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" routerLink="/travelDetail/{{travel.id}}" class="btn btn-sm btn-outline-secondary">View</button>
+                      
+                    </div>
+                   
+                    <div class='row'>
+                     <div class ="col md-2">
+                    <small class="text-muted">Location:  </small>
+                    </div>
+                     <div class ="col md-10">
+                    <small class="text-muted">{{travel.location}}</small>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class='col md-6'>
+                    <small class="text-muted">User:  {{travel.user_id}}</small>
+                    </div>
+                    <div class='col md-6'>
+                    <small class="text-muted">{{travel.date_added| date}}</small>
+                    </div>
+                  
+                    </div>
+                   
+
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+</div>

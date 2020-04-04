@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    
+    
+        {
+            "name": "Python: Django",
+            "type": "python",
+            "request": "launch",
+            "pythonPath": "C:\\Projects\\Python\\TravelDiary\\Backend\\venv\\Scripts\\python.exe",
+            "program": "C:\\Projects\\Python\\TravelDiary\\backend\\djproject\\manage.py",
+            "args": [
+                "runserver",
+                "--noreload"
+            ],
+            "django": true
+        }
+    ]
+}

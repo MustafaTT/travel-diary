@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <a class="navbar-brand" href="#">
+  
+  <img border="0"  src="../../assets/icon.png"  class="img-fluid "  style="max-width: 5%; height: auto;">
+  Travel Diary</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div  class="collapse navbar-collapse" id="navbarColor02">
+  <div *ngIf="isAuthenticated">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="travels" routerLinkActive="active">
+        Travels<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="userTravels" routerLinkActive="active">User Travels</a>
+      </li>
+      <li >
+          <a class="nav-link" routerLink="travelAdd" routerLinkActive="active">Add Travel</a>
+      </li>
+ 
+    </ul>
+     </div>
+    
+  </div>
+  <form  style="display: flex; justify-content: right; align-items: right; flex-direction: row; " *ngIf="!isAuthenticated" #signinForm="ngForm" (ngSubmit)="signin()" class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" name="username" [(ngModel)]="signinUser.email" [(ngModel)]="signinUser.username" required type="text" placeholder="Username or Email">
+      <input class="form-control mr-sm-2" name="password" [(ngModel)]="signinUser.password" required type="text" placeholder="Password">
+      
+      <div class="btn-group">
+                      <button class="btn btn-sm btn-outline-secondary" [disabled]="!signinForm"type="submit">Sign In</button>
+                 
+                    </div>
+    </form>
+    <div class="row" *ngIf="isAuthenticated">
+    <div class ="col">
+    <a class="nav-link " style="color: white;" routerLink="userTravels"   routerLinkActive="active">{{getUserName()}}</a>
+    </div>
+    <div class ="col">
+    <button class="btn btn-sm btn-outline-secondary"  (click)="signout()" >Sign Out</button>
+    </div>
+    </div>
+</nav>
