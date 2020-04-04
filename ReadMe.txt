@@ -36,9 +36,12 @@
 
 - To start logging user viewed travels log to localstorage run java SpringBoot application.Log files location : "TravelViewLogs"
 
+	* Open project SpringBooot\kafka folder build and run SpringBootWithKafkaApplication.java inside src/main/java/com/springboot
+
 - Angular running on localhost:4200  if you change it make sure you add the url of angular inside djproject\djproject\settings.py CORS_ORIGIN_WHITELIST
 
-	* You can start angular project form  frontend/travel-diary folder.
+	* You can start angular project from  frontend/travel-diary folder.
+	* run "npm install" and "ng serve" commands inside travel-diary folder
 	* Make sure your django host url is same with "Frontend\travel-diary\src\app\common\global-constants.ts" apiUrl value
 
 			
