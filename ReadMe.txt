@@ -50,4 +50,4 @@ App Preview
 
 
 
-I[](main.jpg)
+![](main.jpg)
