@@ -50,3 +50,4 @@ App Preview
 
 
 ![alt text](https://github.com/MustafaTT/travel-diary/blob/master/main.jpg)
+![alt text](https://github.com/MustafaTT/travel-diary/blob/master/preview.gif)
